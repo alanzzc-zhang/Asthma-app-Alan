@@ -1,0 +1,93 @@
+.RealTimeBody{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 24px 24px 24px 12%;
+}
+
+.PageTitle{
+    margin: 0 0 16px;
+    font-size: 24px;
+}
+
+.RealTimeGrid{
+    display: grid;
+    grid-template-columns: 2fr 200px;
+    grid-template-rows: 3fr 1fr auto;
+    grid-template-areas:
+        "MainGraph SideBar"
+        "ButtomPanels ."
+        "Footer Footer";
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+}
+
+.MainGraph{
+    grid-area: MainGraph;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    height: 100%;
+    min-height: 0;
+}
+.Note_Dot{
+    pointer-events: auto;
+}
+.SideBar{
+    grid-area: SideBar;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.FilterBox{
+    min-height: 200px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SideButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ButtomPanels{
+    grid-area: ButtomPanels;
+    display: flex;
+    gap: 16px;
+}
+
+.UpcomingEvent,
+.Pending{
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.Footer{
+    grid-area: Footer;
+    text-align: center;
+    padding: 12px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}

@@ -1,0 +1,148 @@
+.ExploreBody{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 24px 24px 24px 12%;
+}
+
+.PageTitle{
+    margin: 0 0 16px;
+    font-size: 24px;
+}
+/* Time Scale Bar*/
+.TimeScaleBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.LeftGroup,
+.CenterGroup,
+.RightGroup{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.CenterGroup{
+    margin: 0 auto; /* 使其在可用空间中居中 */
+}
+
+.ArrowBtn{
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.ArrowBtn:hover{
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+.ArrowBtn.Disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ScaleButtons{
+    display: flex;
+    gap: 8px;
+}
+.ScaleButtons{
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.ScaleButtons:hover{
+    background-color: #0056b3;
+}
+
+.TimeSelect{
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.SelectedBtn{
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+/* */
+.ExploreGrid{
+    display: grid;
+    grid-template-columns: 2fr 200px;
+    gap: 16px;
+    flex: 1;
+}
+
+.MainGraph{
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.Section{
+    min-height: 0;
+    border: 1px dashed #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #fdfdfd;
+}
+.SideBar{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.FilterBox{
+    min-height: 200px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SideButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.SideButton:hover{
+    background-color: #0056b3;
+}
+
+.Footer{
+    margin-top: 16px;
+    text-align: center;
+    padding: 12px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}

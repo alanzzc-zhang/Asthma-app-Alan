@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-06-24T00:00:00",
+    "range": "06/18 to 06/24",
+    "name": "Doctor-Faced Summary 1",
+    "content": "1. Symptoms:\nDaily mild cough and chest tightness noted. Breathlessness peaked on June 23.\n\n2. Medication:\nController adherence ~85%. One reliever spike post high pollen exposure.\n\n3. Triggers:\nHigh pollen (Jun 22–23), consistent with symptoms.\n\n4. Psychological:\nAnxious mood logged twice. Low mood score (~40) on June 21.\n\n5. Assessment:\nModerate symptom fluctuation. Advise closer pollen management and consistent controller use."
+  },
+  {
+    "date": "2025-06-30T00:00:00",
+    "range": "06/24 to 06/30",
+    "name": "Doctor-Faced Summary 2",
+    "content": "1. Symptoms:\nMild overall. Minor cough clusters June 28–29.\n\n2. Medication:\nExcellent adherence. All doses taken as scheduled.\n\n3. Triggers:\nAir quality moderate; no major correlation found.\n\n4. Psychological:\nNeutral mood, no significant variation.\n\n5. Assessment:\nWell-managed asthma. Maintain treatment, re-evaluate after next cycle."
+  }
+]

@@ -1,0 +1,203 @@
+:root{
+    --sidebar-width: 240px;
+    --icon-half: 15px; /* 你的图标宽度 /2，比如图标 30px 就填 15px */
+}
+
+/* -----------Navigation part ----------*/
+.topNavigationBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+/* Setting part */
+.settingContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.setting{
+    font-size: 16px;
+    cursor: pointer;
+}
+.icon{
+    cursor: pointer;
+}
+
+/* Logo + Searching part*/
+.centerGroup{
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10%;
+
+    white-space: nowrap;/* disable line break*/
+    overflow: hidden;/* overall part will be hidden*/
+    text-overflow: ellipsis;/* overall part will become ...*/
+    max-width: 25%;
+}
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+
+.searchInput{
+    margin-left: 10%;
+    margin-right: 10px;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #ccc;/*provide a boarder*/
+    border-radius: 4px;
+    font-size: 14px;
+    width: 240px;
+
+    /*width change when contraction or expansion*/
+    flex: 0 1 240px;
+    min-width: 150px;
+    max-width: 30%;
+    width: 100%;
+}
+.searchIcon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Avater */
+.avatarContainer{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+}
+.avatar{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Side bar */
+.ToggleSetBar{
+    position: absolute;
+    top: 100%;           /* 紧贴容器底部下方 */
+    left: 15%;           /* 水平中心对齐 */
+    transform: translateX(-50%);
+    margin-top: 25px;     /* 可选：和 “Setting” 文本留一点距离 */
+    cursor: pointer;
+    z-index: 2000;
+    transition: transform 0.4s ease;      /* make sure icon is on the highest level */
+}
+.ToggleSetBarShift{
+    transform: translateX(calc(-50% + 175px));
+}
+.sidebar{/* When it close*/
+    position: absolute;
+    top: 65px;  /* make sure not comflict with top navigation bar*/
+    left: 0;
+    height: calc(100% - 65px);
+    width: 0;
+    background-color: #fff;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+.sidebar.open{/* When it open */
+    width: 240px;
+}
+.mainContent{
+    flex: 1;
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.mainContent.shift{
+    margin-left: 240px;
+}
+.sidebar nav ul{
+    list-style: none;
+    padding: 80px 16px 16px;   /* 上方留出 logo/menu 按钮的空间 */
+    margin: 0;
+}
+
+.sidebar nav li{
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+.sidebar nav ul li a:hover {
+    background: #f0f0f0;   /* 鼠标悬停高亮 */
+  }
+/* Sun/Moon Theme switching*/
+.iconGroup{
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.rightControls{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.timeIcon {
+    opacity: 0.7;
+}
+
+
+/*  tooltip */
+.tooltip-wrapper{
+    position: relative;
+    display: inline-block;
+}
+[data-tooltip]:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 50%; /*distance below the icon*/
+    margin-bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    white-space: pre-line;
+    max-width: 200px;
+    overflow-wrap: break-word;
+
+    
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.timeTooltip{
+    bottom: -28%;
+    margin-bottom: 0;
+}
+

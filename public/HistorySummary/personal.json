@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-06-24T00:00:00",
+    "range": "06/18 to 06/24",
+    "name": "Personal Summary 1",
+    "content": "1. Symptom Trends:\nMild cough observed throughout the week, with increased breathlessness on June 21 and 23.\n\n2. Medication Adherence:\nController medication taken on time 85% of the time. One reliever usage spike on June 23.\n\n3. Environmental Triggers:\nPollen levels high on June 22–23, correlating with symptom worsening.\n\n4. Emotion & Lifestyle:\nMood neutral to slightly anxious. Notes indicate poor sleep on June 21.\n\n5. Final Summary:\nOverall condition stable with environmental sensitivity. Suggested to maintain adherence and monitor air quality."
+  },
+  {
+    "date": "2025-06-30T00:00:00",
+    "range": "06/24 to 06/30",
+    "name": "Personal Summary 2",
+    "content": "1. Symptom Trends:\nBreathlessness improved over the week. Minor coughing episodes on June 28–29.\n\n2. Medication Adherence:\nHigh consistency. All reminders followed.\n\n3. Environmental Triggers:\nPM2.5 was moderate but no clear symptom link.\n\n4. Emotion & Lifestyle:\nMood generally calm. User noted cleaning activities on June 27.\n\n5. Final Summary:\nNo major concerns. Continue current routine. Review again next week."
+  }
+]

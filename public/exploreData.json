@@ -1,0 +1,314 @@
+[
+  {
+    "date": "2025-05-27",
+    "cough_count": 7,
+    "reliever_usage": 1,
+    "controller_med": {
+      "status": "on_time",
+      "time": "8:30"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 30,
+      "pm10": 63
+    },
+    "notes": [
+      {
+        "time": "7:45",
+        "text": "Used reliever at night"
+      },
+      {
+        "time": "22:00",
+        "text": "Skipped controller dose"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-28",
+    "cough_count": 6,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "7:00"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 24,
+      "pm10": 48
+    },
+    "notes": [
+      {
+        "time": "15:45",
+        "text": "Skipped controller dose"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-29",
+    "cough_count": 3,
+    "reliever_usage": 2,
+    "controller_med": {
+      "status": "on_time",
+      "time": "7:30"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 18,
+      "pm10": 35
+    },
+    "notes": [
+      {
+        "time": "17:45",
+        "text": "Skipped controller dose"
+      },
+      {
+        "time": "14:00",
+        "text": "Felt okay today"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-30",
+    "cough_count": 8,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "delayed",
+      "time": "13:30"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 38,
+      "pm10": 47
+    },
+    "notes": [
+      {
+        "time": "9:00",
+        "text": "Slight wheeze during exercise"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-31",
+    "cough_count": 7,
+    "reliever_usage": 1,
+    "controller_med": {
+      "status": "on_time",
+      "time": "9:30"
+    },
+    "environment": {
+      "pollen_level": 0,
+      "pm25": 34,
+      "pm10": 57
+    },
+    "notes": [
+      {
+        "time": "6:30",
+        "text": "Used reliever at night"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-01",
+    "cough_count": 11,
+    "reliever_usage": 1,
+    "controller_med": {
+      "status": "delayed",
+      "time": "13:00"
+    },
+    "environment": {
+      "pollen_level": 0,
+      "pm25": 30,
+      "pm10": 37
+    },
+    "notes": [
+      {
+        "time": "14:15",
+        "text": "Slight wheeze during exercise"
+      },
+      {
+        "time": "6:15",
+        "text": "Slight wheeze during exercise"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-02",
+    "cough_count": 10,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "7:00"
+    },
+    "environment": {
+      "pollen_level": 3,
+      "pm25": 29,
+      "pm10": 48
+    },
+    "notes": [
+      {
+        "time": "22:00",
+        "text": "Skipped controller dose"
+      },
+      {
+        "time": "6:45",
+        "text": "Felt okay today"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-03",
+    "cough_count": 7,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "6:00"
+    },
+    "environment": {
+      "pollen_level": 2,
+      "pm25": 12,
+      "pm10": 47
+    },
+    "notes": [
+      {
+        "time": "14:00",
+        "text": "Felt okay today"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-04",
+    "cough_count": 3,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "7:30"
+    },
+    "environment": {
+      "pollen_level": 0,
+      "pm25": 27,
+      "pm10": 57
+    },
+    "notes": [
+      {
+        "time": "6:45",
+        "text": "Used reliever at night"
+      },
+      {
+        "time": "22:45",
+        "text": "Tight chest after lunch"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-05",
+    "act_score": 16,
+    "act_time": "10:30",
+    "cough_count": 4,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "missed",
+      "time": null
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 55,
+      "pm10": 54
+    },
+    "notes": [
+      {
+        "time": "19:00",
+        "text": "Felt okay today"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-06",
+    "act_score": 22,
+    "act_time": "11:00",
+    "cough_count": 4,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "7:00"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 18,
+      "pm10": 54
+    },
+    "notes": [
+      {
+        "time": "8:15",
+        "text": "Felt okay today"
+      },
+      {
+        "time": "21:00",
+        "text": "Skipped controller dose"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-07",
+    "cough_count": 9,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "6:30"
+    },
+    "environment": {
+      "pollen_level": 2,
+      "pm25": 18,
+      "pm10": 68
+    },
+    "notes": [
+      {
+        "time": "18:00",
+        "text": "Skipped controller dose"
+      },
+      {
+        "time": "12:30",
+        "text": "Used reliever at night"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-08",
+    "cough_count": 8,
+    "reliever_usage": 1,
+    "controller_med": {
+      "status": "on_time",
+      "time": "9:30"
+    },
+    "environment": {
+      "pollen_level": 1,
+      "pm25": 28,
+      "pm10": 85
+    },
+    "notes": [
+      {
+        "time": "13:00",
+        "text": "Felt okay today"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-09",
+    "cough_count": 5,
+    "reliever_usage": 0,
+    "controller_med": {
+      "status": "on_time",
+      "time": "9:00"
+    },
+    "environment": {
+      "pollen_level": 0,
+      "pm25": 43,
+      "pm10": 53
+    },
+    "notes": [
+      {
+        "time": "12:45",
+        "text": "Used reliever at night"
+      }
+    ]
+  }
+]

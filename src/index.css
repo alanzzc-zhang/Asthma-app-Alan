@@ -1,0 +1,149 @@
+.app-light{
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+.app-dark{
+    background-color: #1a1a1a;
+    color: #eee;
+    min-height: 100vh;
+}
+
+/* 页面主体 */
+.HomeBody{
+    display: flex;
+    
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 24px 24px 24px 12%;
+}
+.HomePageTitle{
+    margin: 0;
+    font-size: 24px;
+}
+.HomePageGreeting{
+    margin: 8px 0 16px;
+    font-size: 18px;
+}
+  
+  /* 四区块网格 */
+.HomeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "ToDoPanel    ForecastPanel"
+        "MiniTrackingPanel SummaryPanel";
+    gap: 16px;
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+  /* 区块通用样式 */
+.ToDoPanel, .ForecastPanel, .MiniTrackingPanel, .SummaryPanel{
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    overflow-x: hidden;/* Scroll bar appears when there is too much content*/
+    overflow-y: auto;
+    font-size: 16px;
+    min-width: 0;
+}
+.ToDoPanel{
+    grid-area: ToDoPanel; /* top left */
+}
+.ForecastPanel {
+    grid-area: ForecastPanel; /* top right */
+}
+.MiniTrackingPanel {
+    grid-area: MiniTrackingPanel; /* buttom left */
+    overflow: auto;
+}
+.SummaryPanel {
+    grid-area: SummaryPanel; /* buttom right */
+}
+.PanelTitle{
+    margin: 0 0 4px 4px;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* MiniTracking panel*/
+.MiniTrackingContent{
+    display: flex;
+    gap: 12px;
+   
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.Mini_tooltipWrapper{
+    flex: 0 0 auto;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+}
+
+.Mini_dotUp,
+.Mini_dotDown, 
+.Mini_flat{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.Mini_dotUp{
+    background-color: green;
+}
+
+.Mini_dotDown{
+    background-color: red;
+}
+.Mini_flat{
+    background-color: yellow;
+}
+.Mini_trendTitle,
+.Mini_ACTTitle,
+.Mini_MATitle{
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.HomePageMiniTrackerHeader{
+    display: flex;
+    justify-content: flex-start; /* 内容靠左排列 */
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 6px;
+    
+}
+
+.HomepanelBody{
+    display: flex;
+    padding-left: 5px;
+}
+
+.ACTToolTip:hover::after{
+    display: flex;
+}
+
+.HomePageMiniTrackerHeaderMA {
+    display: flex;
+    flex-direction: column; /* 关键：竖向排列 */
+    align-items: flex-start; /* 左对齐 */
+    gap: 8px;                /* 标题和数据之间留点空隙 */
+}
+
+.MiniTrackingMA{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
